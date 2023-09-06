@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-7_CSS</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+        }
+        .innerbox{
+            margin:3rem;
+            background-color: maroon;
+            width:75vw;
+            height: 45vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .outerbox{
+            background-color: brown;
+        }
+        h1{
+            color:blue;
+        }
+        address{
+            height:50px;
+        }
+        .submit{
+            margin:1rem;
+            text-align: center;
+        }
+        
+        input[type="text"], input[type="password"], input[type="number"], textarea, select {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outerbox">
+        <div class="innerbox">
+            <table>
+                <tr>
+                    <th><label for="firstName">First Name</label></th>
+                    <td><input type="text" id="firstName"></td>
+                </tr>
+                <tr>
+                    <th><label for="lastName">Last Name</label></th>
+                    <td><input type="text" id="lastName"></td>
+                </tr>
+                <tr>
+                    <th><label for="mail">Email</label></th>
+                    <td><input type="text" id="mail"></td>
+                </tr>
+                <tr>
+                    <th><label for="password">Password</label></th>
+                    <td><input type="password" id="password"></td>
+                </tr>
+                <tr>
+                    <th><label for="RePassword">Re-enter Password</label></th>
+                    <td><input type="password" id="RePassword"></td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Gender</th>
+                    <td>
+                        <label for="male">Male</label>
+                        <input id="male" type="radio">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="female">Female</label>
+                        <input id="female" type="radio">
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="age">Age</label></th>
+                    <td>
+                        <input id="age" type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="phnumber">Phone Number</label></th>
+                    <td>
+                        <input id="phnumber" type="number">
+                    </td>
+                </tr>
+                <tr class="address">
+                    <th><label for="address">Address</label></th>
+                    <td>
+                        <textarea name="addressArea" id="address" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr class="state">
+                    <th><label for="state">State</label></th>
+                    <td>
+                        <input id="state" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="country">Country</label></th>
+                    <td>
+                        <select name="countries" id="country">
+                            <p>Select country:</p>
+                            <option value="India">India</option>
+                            <option value="Australia">Australia</option>
+                            <option value="England">England</option>
+                            <option value="Russia">Russia</option>
+                            <option value="NewZealand">NewZealand</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="languages">Languages Known</label></th>
+                    <td>
+                        <label for="english">English</label>
+                        <input type="checkbox" id="english">
+                        <label for="telugu">Telugu</label>
+                        <input type="checkbox" id="telugu">
+                        <label for="tamil">Tamil</label>
+                        <input type="checkbox" id="tamil">
+                        <label for="hindi">Hindi</label>
+                        <input type="checkbox" id="hindi">
+                        <label for="sanskrit">Sanskrit</label>
+                        <input type="checkbox" id="sanskrit">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <label for="confirm">Hereby I declare that all the above details are true</label>
+                        <input type="checkbox" id="confirm">
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="2" class="submit"><a href="https://ethnus.com/">Log in to Ethnus site</a></td>
+                </tr>
+                <tr class="submit">
+                    <td colspan="2"><input type="submit" value="Submit" class="submit"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

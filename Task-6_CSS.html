@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-6_CSS</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+        }
+        .cancel_fgt{
+            margin:1rem;
+            padding:1rem;
+            margin-left: 0;
+            padding-left: 0;
+            display: flex;
+        }
+        .login,.username,.password{
+            width:350px;
+            height: 30px;
+        }
+        .cancel,.fgt{
+            padding: 1rem;
+        }
+        .login{
+            background-color: green;
+            color:white;
+        }
+        .cancel{
+            background-color: red;
+            color:white;
+            border-radius: 5px;
+        }
+        .picture{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+        <div class="picture">
+            <img src="icons8-user-50.png" alt="User_Image" width="150px" height="150px">
+        </div>
+        <div>
+            <label for="userName"><b>User Name: </b></label>
+            <br>
+            <input type="text" id="userName" placeholder="Enter UserName" class="username">
+        </div>
+        <br>
+        <div>
+            <label for="password"><b>Password: </b></label>
+            <br>
+            <input type="password" id="password" placeholder="Enter Password" class="password">
+        </div>
+        <br>
+        <input type="submit" value="Login" class="login">
+        <br>
+        <br>
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember Me</label>
+        <div class="cancel_fgt">
+            <button class="cancel">Cancel</button>
+            <a href="https://ethnus.com/" class="fgt">Forgot Password</a>
+        </div>
+    </div>
+</body>
+</html>

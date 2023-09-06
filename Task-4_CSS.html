@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4_CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style-type: none;
+            background-color: aqua;
+            width: 3%;
+            padding: 2rem;
+            margin:1rem;
+            margin-left: 0;
+            border-radius: 5px;
+        }
+        .green{
+            background-color: greenyellow;
+        }
+        .blue{
+            background-color: aqua;
+        }
+        .red{
+            background-color: red;
+        }
+        .gray{
+            background-color: darkgrey;
+        }
+        li:hover{
+            width: 10%;
+        }
+        .flexing{
+            display: flex;
+        }
+        .textcontent{
+            margin:2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="flexing">
+        <nav>
+            <ul>
+                <li class="green">
+                    <a href="https://ethnus.com/"></a>
+                </li>
+                <li class="blue">
+                    <a href="https://ethnus.com/"></a>
+                </li>
+                <li class="red">
+                    <a href="https://ethnus.com/"></a>
+                </li>
+                <li class="gray">
+                    <a href="https://ethnus.com/"></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="textcontent">
+            <h1>Hoverable Side Nav Buttons</h1>
+            <p>Hover over the side Buttons to Open them</p>
+        </div>
+    </div>
+</body>
+</html>

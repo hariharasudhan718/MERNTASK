@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2_CSS</title>
+    <style>
+        ul{
+            list-style-type: none;
+            background-color: aqua;
+            width: 25%;
+        }
+        li{
+            padding:1rem;
+        }
+        a{
+            text-decoration: none;
+            font-size: larger;
+        }
+        li:hover{
+            background-color: orange;
+        }
+        a:hover{
+            color:white;
+        }
+        .horizontal{
+            display: flex;
+            width:35%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="https://ethnus.com/">Home</a></li>
+            <li><a href="https://ethnus.com/">Java</a></li>
+            <li><a href="https://ethnus.com/">CSS</a></li>
+            <li><a href="https://ethnus.com/">HTML</a></li>
+            <li><a href="https://ethnus.com/">Bootstrap</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <div>
+        <ul class="horizontal">
+            <li><a href="https://ethnus.com/">Home</a></li>
+            <li><a href="https://ethnus.com/">Java</a></li>
+            <li><a href="https://ethnus.com/">CSS</a></li>
+            <li><a href="https://ethnus.com/">HTML</a></li>
+            <li><a href="https://ethnus.com/">Bootstrap</a></li>
+        </ul>
+    </div>
+    </nav>
+</body>
+</html>
